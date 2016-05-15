@@ -6,7 +6,34 @@ _ = require "underscore"
 cj = require ".."
 
 describe "Attributes", ->
+  describe "[Root](http://amundsen.com/media-types/collection/)", ->
 
+    collection = null
+    data = null
+
+    before ->
+      data = require "./fixtures/root"
+
+    beforeEach (done)->
+      cj.parse data, (error, _collection)->
+        throw error if error
+        collection = _collection
+        done()
+
+    describe "[commands](http://amundsen.com/media-types/collection/format/#arrays-items)", ->
+      it "should iterate commands", ->
+        for idx, item of collection.commands
+          orig = data.collection.commands[idx]
+          item.href.should.equal orig.href
+
+      it "should get a value", ->
+        for idx, item of collection.commands
+          orig = data.collection.commands[idx]
+          for datum in orig.data
+            itemDatum = item.get(datum.name)
+            should.exist itemDatum, "Item does not have #{datum.name}"
+            itemDatum.should.equal datum.value
+        
   describe "[Original](http://amundsen.com/media-types/collection/)", ->
 
     collection = null
@@ -26,12 +53,6 @@ describe "Attributes", ->
         collection.version.should.equal data.collection.version
       it "should have an href", ->
         collection.href.should.equal data.collection.href
-      it "should throw an exception with a bad version number", ->
-        cj.parse {collection: version: "1.1"}, (error, col)->
-          should.exist error, "No error was returned"
-      it "should throw an exception with a malformed collection", ->
-        cj.parse {version: "1.1"}, (error, col)->
-          should.exist error, "No error was returned"
 
     describe "[error](http://amundsen.com/media-types/collection/format/#objects-error)", ->
       it "should have an error", ->

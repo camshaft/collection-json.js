@@ -1,0 +1,601 @@
+{
+    "collection": {
+        "version": "3.262.9"
+        , "href": "https://api.teamsnap.com/v3/"
+        , "rel": "root"
+        , "links": [
+            {
+                "rel": "apiv2_root"
+                , "href": "https://api.teamsnap.com/v2"
+            }
+            
+            , {
+                "rel": "authorization"
+                , "href": "https://auth.teamsnap.com"
+            }
+            
+            , {
+                "rel": "apn_devices"
+                , "href": "https://api.teamsnap.com/v3/apn_devices"
+            }
+            
+            , {
+                "rel": "assignments"
+                , "href": "https://api.teamsnap.com/v3/assignments"
+            }
+            
+            , {
+                "rel": "availabilities"
+                , "href": "https://api.teamsnap.com/v3/availabilities"
+            }
+            
+            , {
+                "rel": "broadcast_email_attachments"
+                , "href": "https://api.teamsnap.com/v3/broadcast_email_attachments"
+            }
+            
+            , {
+                "rel": "broadcast_emails"
+                , "href": "https://api.teamsnap.com/v3/broadcast_emails"
+            }
+            
+            , {
+                "rel": "broadcast_alerts"
+                , "href": "https://api.teamsnap.com/v3/broadcast_alerts"
+            }
+            
+            , {
+                "rel": "contact_email_addresses"
+                , "href": "https://api.teamsnap.com/v3/contact_email_addresses"
+            }
+            
+            , {
+                "rel": "contact_phone_numbers"
+                , "href": "https://api.teamsnap.com/v3/contact_phone_numbers"
+            }
+            
+            , {
+                "rel": "contacts"
+                , "href": "https://api.teamsnap.com/v3/contacts"
+            }
+            
+            , {
+                "rel": "countries"
+                , "href": "https://api.teamsnap.com/v3/countries"
+            }
+            
+            , {
+                "rel": "custom_data"
+                , "href": "https://api.teamsnap.com/v3/custom_data"
+            }
+            
+            , {
+                "rel": "custom_fields"
+                , "href": "https://api.teamsnap.com/v3/custom_fields"
+            }
+            
+            , {
+                "rel": "league_custom_data"
+                , "href": "https://api.teamsnap.com/v3/league_custom_data"
+            }
+            
+            , {
+                "rel": "league_custom_fields"
+                , "href": "https://api.teamsnap.com/v3/league_custom_fields"
+            }
+            
+            , {
+                "rel": "divisions"
+                , "href": "https://api.teamsnap.com/v3/divisions"
+            }
+            
+            , {
+                "rel": "division_contact_email_addresses"
+                , "href": "https://api.teamsnap.com/v3/division_contact_email_addresses"
+            }
+            
+            , {
+                "rel": "division_contact_phone_numbers"
+                , "href": "https://api.teamsnap.com/v3/division_contact_phone_numbers"
+            }
+            
+            , {
+                "rel": "division_contacts"
+                , "href": "https://api.teamsnap.com/v3/division_contacts"
+            }
+            
+            , {
+                "rel": "division_events"
+                , "href": "https://api.teamsnap.com/v3/division_events"
+            }
+            
+            , {
+                "rel": "division_locations"
+                , "href": "https://api.teamsnap.com/v3/division_locations"
+            }
+            
+            , {
+                "rel": "division_member_email_addresses"
+                , "href": "https://api.teamsnap.com/v3/division_member_email_addresses"
+            }
+            
+            , {
+                "rel": "division_member_phone_numbers"
+                , "href": "https://api.teamsnap.com/v3/division_member_phone_numbers"
+            }
+            
+            , {
+                "rel": "division_members"
+                , "href": "https://api.teamsnap.com/v3/division_members"
+            }
+            
+            , {
+                "rel": "division_members_preferences"
+                , "href": "https://api.teamsnap.com/v3/division_members_preferences"
+            }
+            
+            , {
+                "rel": "division_events_imports"
+                , "href": "https://api.teamsnap.com/v3/division_events_imports"
+            }
+            
+            , {
+                "rel": "division_team_standings"
+                , "href": "https://api.teamsnap.com/v3/division_team_standings"
+            }
+            
+            , {
+                "rel": "divisions_preferences"
+                , "href": "https://api.teamsnap.com/v3/divisions_preferences"
+            }
+            
+            , {
+                "rel": "event_statistics"
+                , "href": "https://api.teamsnap.com/v3/event_statistics"
+            }
+            
+            , {
+                "rel": "events"
+                , "href": "https://api.teamsnap.com/v3/events"
+            }
+            
+            , {
+                "rel": "facebook_pages"
+                , "href": "https://api.teamsnap.com/v3/facebook_pages"
+            }
+            
+            , {
+                "rel": "forecasts"
+                , "href": "https://api.teamsnap.com/v3/forecasts"
+            }
+            
+            , {
+                "rel": "forum_posts"
+                , "href": "https://api.teamsnap.com/v3/forum_posts"
+            }
+            
+            , {
+                "rel": "forum_subscriptions"
+                , "href": "https://api.teamsnap.com/v3/forum_subscriptions"
+            }
+            
+            , {
+                "rel": "forum_topics"
+                , "href": "https://api.teamsnap.com/v3/forum_topics"
+            }
+            
+            , {
+                "rel": "geocoded_locations"
+                , "href": "https://api.teamsnap.com/v3/geocoded_locations"
+            }
+            
+            , {
+                "rel": "gcm_devices"
+                , "href": "https://api.teamsnap.com/v3/gcm_devices"
+            }
+            
+            , {
+                "rel": "league_registrant_documents"
+                , "href": "https://api.teamsnap.com/v3/league_registrant_documents"
+            }
+            
+            , {
+                "rel": "locations"
+                , "href": "https://api.teamsnap.com/v3/locations"
+            }
+            
+            , {
+                "rel": "me"
+                , "href": "https://api.teamsnap.com/v3/me"
+            }
+            
+            , {
+                "rel": "member_email_addresses"
+                , "href": "https://api.teamsnap.com/v3/member_email_addresses"
+            }
+            
+            , {
+                "rel": "member_balances"
+                , "href": "https://api.teamsnap.com/v3/member_balances"
+            }
+            
+            , {
+                "rel": "member_files"
+                , "href": "https://api.teamsnap.com/v3/member_files"
+            }
+            
+            , {
+                "rel": "member_links"
+                , "href": "https://api.teamsnap.com/v3/member_links"
+            }
+            
+            , {
+                "rel": "member_payments"
+                , "href": "https://api.teamsnap.com/v3/member_payments"
+            }
+            
+            , {
+                "rel": "member_phone_numbers"
+                , "href": "https://api.teamsnap.com/v3/member_phone_numbers"
+            }
+            
+            , {
+                "rel": "member_statistics"
+                , "href": "https://api.teamsnap.com/v3/member_statistics"
+            }
+            
+            , {
+                "rel": "members"
+                , "href": "https://api.teamsnap.com/v3/members"
+            }
+            
+            , {
+                "rel": "members_preferences"
+                , "href": "https://api.teamsnap.com/v3/members_preferences"
+            }
+            
+            , {
+                "rel": "message_data"
+                , "href": "https://api.teamsnap.com/v3/message_data"
+            }
+            
+            , {
+                "rel": "messages"
+                , "href": "https://api.teamsnap.com/v3/messages"
+            }
+            
+            , {
+                "rel": "opponents"
+                , "href": "https://api.teamsnap.com/v3/opponents"
+            }
+            
+            , {
+                "rel": "opponents_results"
+                , "href": "https://api.teamsnap.com/v3/opponents_results"
+            }
+            
+            , {
+                "rel": "payment_notes"
+                , "href": "https://api.teamsnap.com/v3/payment_notes"
+            }
+            
+            , {
+                "rel": "paypal_currencies"
+                , "href": "https://api.teamsnap.com/v3/paypal_currencies"
+            }
+            
+            , {
+                "rel": "plans"
+                , "href": "https://api.teamsnap.com/v3/plans"
+            }
+            
+            , {
+                "rel": "plans_all"
+                , "href": "https://api.teamsnap.com/v3/plans/all"
+            }
+            
+            , {
+                "rel": "public_features"
+                , "href": "https://api.teamsnap.com/v3/public_features"
+            }
+            
+            , {
+                "rel": "schemas"
+                , "href": "https://api.teamsnap.com/v3/schemas"
+            }
+            
+            , {
+                "rel": "sms_gateways"
+                , "href": "https://api.teamsnap.com/v3/sms_gateways"
+            }
+            
+            , {
+                "rel": "sponsors"
+                , "href": "https://api.teamsnap.com/v3/sponsors"
+            }
+            
+            , {
+                "rel": "sports"
+                , "href": "https://api.teamsnap.com/v3/sports"
+            }
+            
+            , {
+                "rel": "statistics"
+                , "href": "https://api.teamsnap.com/v3/statistics"
+            }
+            
+            , {
+                "rel": "statistic_aggregates"
+                , "href": "https://api.teamsnap.com/v3/statistic_aggregates"
+            }
+            
+            , {
+                "rel": "statistic_data"
+                , "href": "https://api.teamsnap.com/v3/statistic_data"
+            }
+            
+            , {
+                "rel": "statistic_groups"
+                , "href": "https://api.teamsnap.com/v3/statistic_groups"
+            }
+            
+            , {
+                "rel": "team_fees"
+                , "href": "https://api.teamsnap.com/v3/team_fees"
+            }
+            
+            , {
+                "rel": "team_media"
+                , "href": "https://api.teamsnap.com/v3/team_media"
+            }
+            
+            , {
+                "rel": "team_medium_comments"
+                , "href": "https://api.teamsnap.com/v3/team_medium_comments"
+            }
+            
+            , {
+                "rel": "team_media_groups"
+                , "href": "https://api.teamsnap.com/v3/team_media_groups"
+            }
+            
+            , {
+                "rel": "team_public_sites"
+                , "href": "https://api.teamsnap.com/v3/team_public_sites"
+            }
+            
+            , {
+                "rel": "teams"
+                , "href": "https://api.teamsnap.com/v3/teams"
+            }
+            
+            , {
+                "rel": "teams_paypal_preferences"
+                , "href": "https://api.teamsnap.com/v3/teams_paypal_preferences"
+            }
+            
+            , {
+                "rel": "teams_preferences"
+                , "href": "https://api.teamsnap.com/v3/teams_preferences"
+            }
+            
+            , {
+                "rel": "teams_results"
+                , "href": "https://api.teamsnap.com/v3/teams_results"
+            }
+            
+            , {
+                "rel": "team_statistics"
+                , "href": "https://api.teamsnap.com/v3/team_statistics"
+            }
+            
+            , {
+                "rel": "time_zones"
+                , "href": "https://api.teamsnap.com/v3/time_zones"
+            }
+            
+            , {
+                "rel": "tracked_item_statuses"
+                , "href": "https://api.teamsnap.com/v3/tracked_item_statuses"
+            }
+            
+            , {
+                "rel": "tracked_items"
+                , "href": "https://api.teamsnap.com/v3/tracked_items"
+            }
+            
+            , {
+                "rel": "tsl_metadata"
+                , "href": "https://api.teamsnap.com/v3/tsl_metadata"
+            }
+            
+            , {
+                "rel": "tsl_chats"
+                , "href": "https://api.teamsnap.com/v3/tsl_chats"
+            }
+            
+            , {
+                "rel": "tsl_photos"
+                , "href": "https://api.teamsnap.com/v3/tsl_photos"
+            }
+            
+            , {
+                "rel": "tsl_scores"
+                , "href": "https://api.teamsnap.com/v3/tsl_scores"
+            }
+            
+            , {
+                "rel": "users"
+                , "href": "https://api.teamsnap.com/v3/users"
+            }
+            
+            , {
+                "rel": "dude"
+                , "href": "https://api.teamsnap.com/v3/dude"
+            }
+            
+            , {
+                "rel": "sweet"
+                , "href": "https://api.teamsnap.com/v3/sweet"
+            }
+            
+            , {
+                "rel": "random"
+                , "href": "https://api.teamsnap.com/v3/random"
+            }
+            
+            , {
+                "rel": "xyzzy"
+                , "href": "https://api.teamsnap.com/v3/xyzzy"
+            }
+            
+            , {
+                "rel": "root"
+                , "href": "https://api.teamsnap.com/v3/"
+            }
+            
+            , {
+                "rel": "self"
+                , "href": "https://api.teamsnap.com/v3/"
+            }
+        ]
+        , "queries": [
+            {
+                "rel": "bulk_load"
+                , "href": "https://api.teamsnap.com/v3/bulk_load"
+                , "prompt": "Returns a heterogeneous collection of the specified types for a specified team or teams. Additional filters can be passed into requested types by passing them in the url's querystring as type__filter=value (i.e. ?event__start_date=2015-01-01). Any filter can be passed that is available on the search for the specified type."
+                , "data": [
+                    {
+                        "name": "team_id"
+                        , "value": null
+                        , "prompt": "The team_id(s) to return results for, this can be a single id or a comma-separated list of ids."
+                    }
+                    
+                    , {
+                        "name": "scope_to"
+                        , "value": null
+                        , "prompt": "A comma separated list of singular types that you would like to scope the rest of the related result sets to. For instance, scoping assignments to events and providing a filter on events will return only assignments for the events returned."
+                    }
+                    
+                    , {
+                        "name": "types"
+                        , "value": null
+                        , "prompt": "A comma separated list of singular types that you want returned."
+                    }
+                ]
+            }
+            
+            , {
+                "rel": "query"
+                , "href": "https://api.teamsnap.com/v3/q"
+                , "prompt": "Returns a heterogeneous collection of the specified types. You must pass at least one valid filter in, filters can be passed into requested types by passing them in the url's querystring as type__filter=value (i.e. ?event__start_date=2015-01-01). Any filter can be passed that is available on the search for the specified type. Types can also be filtered by using the 'scope_to' parameter. Unfiltered searches will return as empty."
+                , "data": [
+                    {
+                        "name": "scope_to"
+                        , "value": null
+                        , "prompt": "A comma separated list of singular types that you would like to scope the rest of the related result sets to. For instance, scoping assignments to events and providing a filter on events will return only assignments for the events returned."
+                    }
+                    
+                    , {
+                        "name": "types"
+                        , "value": null
+                        , "prompt": "A comma separated list of singular types that you want returned."
+                    }
+                ]
+            }
+            
+            , {
+                "rel": "me"
+                , "href": "https://api.teamsnap.com/v3/me"
+            }
+            
+            , {
+                "rel": "feature"
+                , "href": "https://api.teamsnap.com/v3/feature"
+                , "data": [
+                    {
+                        "name": "id"
+                        , "value": null
+                    }
+                    
+                    , {
+                        "name": "type"
+                        , "value": null
+                    }
+                    
+                    , {
+                        "name": "feature_name"
+                        , "value": null
+                    }
+                ]
+            }
+            
+            , {
+                "rel": "forecast"
+                , "href": "https://api.teamsnap.com/v3/forecasts/search"
+                , "data": [
+                    {
+                        "name": "team_id"
+                        , "value": null
+                    }
+                ]
+            }
+            
+            , {
+                "rel": "geocode"
+                , "href": "https://api.teamsnap.com/v3/geocoded_locations/search"
+                , "data": [
+                    {
+                        "name": "country"
+                        , "value": null
+                    }
+                    
+                    , {
+                        "name": "postal_code"
+                        , "value": null
+                    }
+                ]
+            }
+            
+            , {
+                "rel": "generate_firebase_token"
+                , "href": "https://api.teamsnap.com/v3/generate_firebase_token"
+                , "data": [
+                    {
+                        "name": "team_id"
+                        , "value": null
+                    }
+                    
+                    , {
+                        "name": "version"
+                        , "value": null
+                    }
+                ]
+            }
+            
+            , {
+                "rel": "invitation_finder"
+                , "href": "https://api.teamsnap.com/v3/invitation_finder"
+                , "data": [
+                    {
+                        "name": "email_address"
+                        , "value": null
+                    }
+                ]
+            }
+        ]
+        , "commands": [
+            {
+                "rel": "send_invitations"
+                , "href": "https://api.teamsnap.com/v3/send_invitations"
+                , "prompt": "Send any pending invitations for a specified email address"
+                , "data": [
+                    {
+                        "name": "email_address"
+                        , "value": "test@test.com"
+                    }
+                ]
+            }
+        ]
+    }
+}
