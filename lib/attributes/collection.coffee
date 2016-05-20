@@ -34,7 +34,7 @@ module.exports = class Collection
       @_links
 
   link: (rel)->
-    _.find @links, (link)-> link.rel is rel
+    _.find @_collection.links||[], (link)-> link.rel is rel
 
   @define "items",
     get: ->
@@ -48,7 +48,7 @@ module.exports = class Collection
       @_items
 
   item: (href)->
-    _.find @items, (item)-> item.href is href
+    _.find @_collection.items||[], (item)-> item.href is href
 
   @define "queries",
     get: ->

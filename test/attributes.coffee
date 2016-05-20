@@ -22,9 +22,11 @@ describe "Attributes", ->
 
     describe "[commands](http://amundsen.com/media-types/collection/format/#arrays-items)", ->
       it "should iterate commands", ->
-        for idx, item of collection.commands
-          orig = data.collection.commands[idx]
-          item.href.should.equal orig.href
+        for command in collection.commands
+          orig = _.find data.collection.commands, (_command)-> _command.rel is command.rel
+          command.href.should.equal orig.href
+          command.rel.should.equal orig.rel
+          command.prompt.should.equal orig.prompt
 
       it "should get a value", ->
         for idx, item of collection.commands
