@@ -1,4 +1,3 @@
-
 _ = require "../underscore"
 http = require "../http"
 
@@ -18,6 +17,7 @@ module.exports = class Collection
   @define "href"
     get: ->
       @_collection.href
+      
   @define "version"
     get: ->
       @_collection.version
@@ -34,7 +34,7 @@ module.exports = class Collection
       @_links
 
   link: (rel)->
-    _.find @_collection.links||[], (link)-> link.rel is rel
+    _.find @links, (link)-> link.rel is rel
 
   @define "items",
     get: ->
@@ -48,7 +48,7 @@ module.exports = class Collection
       @_items
 
   item: (href)->
-    _.find @_collection.items||[], (item)-> item.href is href
+    _.find @items, (item)-> item.href is href
 
   @define "queries",
     get: ->
@@ -67,23 +67,25 @@ module.exports = class Collection
     Query = require "./query"
     # Don't cache it since we allow you to set parameters and submit it
     new Query query
-    
+
   @define "commands",
     get: ->
       commands = []
       Command = require "./query"
-        
+
       _.each @_collection.commands||[], (command)->
-         commands.push new Command command
+        commands.push new Command command
       commands
-            
+
   command: (rel)->
     command = _.find @_collection.commands||[], (command)->
       command.rel is rel
     return null if not command
-    
-    new Command command
 
+    Command = require "./query"
+    # Don't cache it since we allow you to set parameters and submit it
+    new Query command
+	
   # TODO support multiple templates:
   # https://github.com/mamund/collection-json/blob/master/extensions/templates.md
 
