@@ -7,12 +7,12 @@
         "install": "make client"
         , "test": "make test && make test-acceptance"
     }
-    , "repository": "git://github.com/7elephants/collection-json.js.git"
+    , "repository": "https://github.com/camshaft/collection-json.js.git"
     , "author": "Cameron Bytheway"
     , "contributors": {
         "name": "Andrew Steiger"
         , "email": "andrew@andrewsteiger.com"
-        , "url": "http://github.com/7elephants/"
+        , "url": "http://github.com/7elephants"
     }
     , "license": "MIT"
     , "dependencies": {
