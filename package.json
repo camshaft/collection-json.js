@@ -4,10 +4,10 @@
     , "description": "Collection+JSON Client"
     , "main": "index.js"
     , "scripts": {
-        "install": "make client"
+        "install": "npm update && make client"
         , "test": "make test && make test-acceptance"
     }
-    , "repository": "https://github.com/camshaft/collection-json.js.git"
+    , "repository": "https://github.com/7elephants/collection-json.js.git"
     , "author": "Cameron Bytheway"
     , "contributors": {
         "name": "Andrew Steiger"
