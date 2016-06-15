@@ -1,4 +1,3 @@
-
 _ = require "../underscore"
 http = require "../http"
 
@@ -7,13 +6,10 @@ Function::define = (prop, desc) ->
 
 module.exports = class Collection
   constructor: (collection)->
-    # Lets verify that it's a valid collection
-    if collection?.collection?.version isnt "1.0"
-      throw new Error "Collection does not conform to Collection+JSON 1.0 Spec"
-
     @_collection = collection.collection
     @_links = null
     @_queries = null
+    @_commands = null
     @_items = null
     @_template = null
     @error = @_collection.error
@@ -21,6 +17,7 @@ module.exports = class Collection
   @define "href"
     get: ->
       @_collection.href
+      
   @define "version"
     get: ->
       @_collection.version
@@ -71,6 +68,24 @@ module.exports = class Collection
     # Don't cache it since we allow you to set parameters and submit it
     new Query query
 
+  @define "commands",
+    get: ->
+      commands = []
+      Command = require "./query"
+
+      _.each @_collection.commands||[], (command)->
+        commands.push new Command command
+      commands
+
+  command: (rel)->
+    command = _.find @_collection.commands||[], (command)->
+      command.rel is rel
+    return null if not command
+
+    Command = require "./query"
+    # Don't cache it since we allow you to set parameters and submit it
+    new Query command
+	
   # TODO support multiple templates:
   # https://github.com/mamund/collection-json/blob/master/extensions/templates.md
 
